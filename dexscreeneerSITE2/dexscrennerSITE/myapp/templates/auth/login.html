@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/auth/login.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <!-- Header with Icons -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="https://t.me/enaticommunity"><img class="header-icon" src="{% static 'images/telegram_icon.png' %}" alt="Icon 1"></a>
+                <a href="https://x.com/enatixyz"><img class="header-icon" src="{% static 'images/twitter_icon.png' %}" alt="Icon 2"></a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <img class="intro-image" src="{% static 'images/start_image.jpg' %}" alt="Description of the image">
+                <a href="{% url 'enter_name' %}">
+                    <button class="intro-button">Add Group</button>
+                </a>
+            </div>
+        </div>
+   </div>
+
+   <footer class="footer">
+        <div class="container">
+            <p>© 2024 Enati Company. Designed and Developed by Illya Ostrovkiy</p>
+        </div>
+    </footer>
+
+</body>
+</html>

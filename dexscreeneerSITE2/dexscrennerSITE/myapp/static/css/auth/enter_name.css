@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    transition: 1s;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Центрирование всего содержимого body по горизонтали */
+    align-items: center; /* Центрирование всего содержимого body по вертикали */
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+/* Header with Icons */
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Centering and spacing icons */
+.header__inner {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    align-items: center; /* Centers the icons vertically */
+    gap: 300px; /* Adds space between the icons */
+}
+
+.header-icon {
+    width: 40px; /* Size of the icons */
+    height: 40px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.header-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+/*Container*/
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/*Intro*/
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    padding-bottom: 100px;
+}
+
+/*Intro Inner*/
+.intro__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Центрирование текста */
+}
+
+
+/*Intro Button*/
+.intro-button {
+    display: inline-block;
+    padding: 18px 130px; /* Increased padding for a wider button */
+    font-size: 20px; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase;
+    color: white; /* White text for contrast */
+    background: linear-gradient(135deg, #1f1f1f, #363636); /* Dark gradient background */
+    border: none;
+    border-radius: 12px; /* Smooth corners */
+    text-decoration: none;
+    box-shadow: 0 8px 0 #171717; /* Deep shadow for a 3D effect */
+    transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+    cursor: pointer;
+    width: 100%; /* Full width */
+    max-width: 500px; /* Set a maximum width to avoid being too wide */
+
+    margin-top: 40px;
+}
+
+.intro-button:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.intro-button:active {
+    box-shadow: 0 2px 0 #000000; /* Pressed down effect */
+    transform: translateY(2px); /* Button pressed down */
+}
+
+.intro-image {
+    width: 15%;    /* Ширина 50% от родительского элемента */
+    height: auto;  /* Высота будет автоматически подстраиваться для сохранения пропорций */
+}
+
+
+/* Заголовок с отступом снизу */
+.intro-text {
+    font-size: 25px;
+    margin-bottom: 40px; /* Отступ между заголовком и текстовым полем */
+}
+
+.username-input {
+    width: 100%; /* Полная ширина */
+    max-width: 300px; /* Максимальная ширина */
+    padding: 15px; /* Отступ внутри поля */
+    font-size: 18px; /* Размер шрифта */
+    color: #ffffff; /* Цвет текста */
+    background-color: #2a2a2a; /* Темный фон */
+    border: 2px solid #444444; /* Темная рамка */
+    border-radius: 8px; /* Закругленные углы */
+    outline: none; /* Убираем обводку при фокусе */
+    transition: border-color 0.3s; /* Плавный переход цвета рамки */
+}
+
+/* Изменение цвета рамки при фокусе */
+.username-input:focus {
+    border-color: #ffffff; /* Цвет рамки при фокусе */
+    background-color: #3a3a3a; /* Немного светлее фон при фокусе */
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black; /* Background color of the footer */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 10px 0; /* Padding inside the footer */
+    z-index: 1000;
+}
+
+/* Container inside footer */
+.footer .container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
